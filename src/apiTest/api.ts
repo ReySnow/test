@@ -1,8 +1,8 @@
 import axios from 'axios'
 
 export function fetchTodoList() {
-  return axios.get('/api/todoList').then((res) => {
-    return res.data
+  return axios.get('/api/todoList').then(({ data }) => {
+    return data
   })
 }
 
@@ -11,8 +11,8 @@ export function fetchAddTodo(title: string) {
     .post('/api/addTodo', {
       title
     })
-    .then((res) => {
-      return res.data
+    .then(({ data }) => {
+      return data
     })
 }
 
@@ -21,7 +21,7 @@ export function fetchRemoveTodo(id: number) {
     .post('/api/removeTodo', {
       id
     })
-    .then((res) => {
-      return res.data
+    .then(({ data }) => {
+      return data
     })
 }

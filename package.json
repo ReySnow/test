@@ -14,6 +14,7 @@
     "axios": "^1.4.0",
     "flush-promises": "^1.0.2",
     "pinia": "^2.0.33",
+    "vitest-environment-rey": "link:src/vitest-environment-rey",
     "vue": "^3.2.47"
   },
   "devDependencies": {
